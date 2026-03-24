@@ -23,7 +23,7 @@ if (DB_URL) {
   mongoose
     .connect(DB_URL)
     .then(() => console.log("✅ MongoDB connected"))
-    .catch((err) => console.log("❌ DB connection error:", err));
+    .catch((err) => console.log("DB connection error:", err));
 } else {
   console.log("⚠️ No DB_URL provided");
 }
